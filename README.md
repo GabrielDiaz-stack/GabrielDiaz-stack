@@ -1,6 +1,6 @@
-# ¿Dónde guardo? — Portafolio UX
+# Casita — Portafolio UX
 
-Caso de estudio del proyecto académico **¿Dónde guardo?**, una propuesta para coordinar el inventario y las compras del hogar.
+Caso de estudio del proyecto académico **Casita**, una propuesta para coordinar el inventario y las compras del hogar.
 
 ## Equipo
 
