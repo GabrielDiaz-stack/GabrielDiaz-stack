@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dónde guardo — Wireframes</title>
+<style>
+*{box-sizing:border-box;margin:0}
+body{background:#e4e4e4;font:15px/1.4 Inter,system-ui,sans-serif;color:#2b2b2b;padding:20px}
+.top{position:sticky;top:0;background:#e4e4e4;padding:8px 0;font-size:12px;z-index:9;display:flex;flex-wrap:wrap;gap:6px}
+.top a{color:#2b2b2b;border:1px solid #aaa;padding:3px 7px;border-radius:4px;text-decoration:none;background:#fff}
+h3{margin:30px 0 12px;font-size:18px}
+.g{display:flex;flex-wrap:wrap;gap:28px}
+.w{width:390px}.w>b{display:block;font-size:13px;margin-bottom:4px}.w>small{display:block;color:#666;font-size:11px;margin-bottom:4px}
+.f{width:390px;height:844px;background:#fff;border:1px solid #aaa;position:relative;overflow:hidden;display:flex;flex-direction:column}
+header{padding:22px 112px 16px 20px;border-bottom:1px solid #eee;position:relative;flex:none}
+.ey{font-size:10px;letter-spacing:1.2px;color:#888;text-transform:uppercase}
+h1{font-size:27px;letter-spacing:-.8px;line-height:1.15;margin:7px 0 5px}
+header p,.m,.sub{font-size:12px;color:#777}.sub{margin-top:4px}
+h2{font-size:17px;font-weight:650}
+.lp{position:absolute;right:18px;top:23px;display:flex;align-items:center;padding-right:5px}
+.lp i{width:27px;height:27px;border-radius:50%;background:#e6e6e6;color:#444;font:700 9px/23px Inter,sans-serif;text-align:center;border:2px solid #fff;margin-left:-8px}
+.lp i.m{width:22px;height:22px;line-height:18px}
+.lp b{position:absolute;right:0;top:-1px;width:8px;height:8px;border-radius:50%;background:#000;border:1px solid #fff}
+main{flex:1;overflow:auto;padding:19px 18px 25px;scrollbar-width:none}
+nav{flex:none;display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #e7e7e1;padding:6px 4px;height:66px;background:#fff}
+nav div{display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:10px;color:#aaa;min-height:44px}
+nav b{font-size:19px;font-weight:400}nav .on{color:#2b2b2b;font-weight:700}
+.card{border:1px solid #e7e7e1;padding:13px;border-radius:6px;margin-bottom:9px;background:#fff;position:relative}
+.row{display:flex;align-items:center;gap:11px}.gr{flex:1;min-width:0}
+.nm{font-size:14px;font-weight:600}
+.sec{display:flex;align-items:center;justify-content:space-between;margin:22px 0 11px}
+.btn{border:1px solid #ccc;background:#fff;border-radius:5px;padding:10px 12px;font-size:12px;font-weight:600;display:flex;align-items:center;justify-content:center;min-height:44px;text-align:center}
+.p{background:#2b2b2b;border-color:#2b2b2b;color:#fff}.dis{background:#bbb;border-color:#bbb}.w100{width:100%}
+.lk{font-size:12px;font-weight:600;padding:5px;color:#2b2b2b}
+.tag{font-size:10px;padding:4px 7px;background:#eee;border-radius:3px;color:#555;white-space:nowrap}
+.tag.w{background:#fff;border:1px dotted #444;color:#444}.tag.g{background:#888;color:#fff}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.q{border:1px solid #e7e7e1;border-radius:5px;padding:13px;min-height:90px}.q b{font-size:18px;display:block;font-weight:400}.q strong{display:block;font-size:13px;margin:8px 0 3px}.q span{font-size:11px;color:#777}
+.ic{width:43px;height:43px;border:1px solid #e7e7e1;background:#f5f5f5;display:grid;place-items:center;font-size:19px;color:#666;flex:none}
+.fd{border:1px solid #ccc;padding:11px;border-radius:5px;background:#fafafa;font-size:13px;margin:5px 0 12px;display:flex;justify-content:space-between;align-items:center;min-height:44px}
+.fd span{color:#999}.fd i{font-style:normal;color:#888}.fd.er{border:2px solid #2b2b2b}
+.em{font-size:11px;color:#444;margin:-8px 0 8px}.lb{font-size:12px;color:#777}
+.an{font-size:10px;color:#888;font-style:italic;margin:-8px 0 10px}
+.ch{display:flex;gap:6px;overflow:auto;margin:10px 0 14px;scrollbar-width:none}
+.ch span{white-space:nowrap;border:1px solid #ccc;padding:7px 10px;border-radius:4px;font-size:11px;background:#fff}
+.ch .on{background:#888;color:#fff;border-color:#888}
+.ac{display:flex;gap:8px;margin-top:12px}.ac .btn{flex:1}
+.nt{padding:12px;border-left:3px solid #999;background:#f5f5f5;font-size:12px;margin:12px 0}
+.emp{text-align:center;padding:30px 15px;color:#777;font-size:13px}
+.ln{height:1px;background:#eee;margin:11px 0}
+.qt{display:flex;align-items:center;gap:8px;font-weight:600}
+.qt i{width:32px;height:32px;border:1px solid #ccc;border-radius:4px;display:grid;place-items:center;font-style:normal;font-weight:400}
+.cb{width:20px;height:20px;border:1.5px solid #888;border-radius:3px;display:grid;place-items:center;font-size:12px;font-style:normal;flex:none}
+.cb.x{background:#2b2b2b;color:#fff;border-color:#2b2b2b}
+.ov{position:absolute;inset:0;background:rgba(0,0,0,.4)}
+.sh{position:absolute;left:0;right:0;bottom:0;background:#fff;border-top:1px solid #999;border-radius:12px 12px 0 0;padding:22px;max-height:717px;overflow:hidden}
+.sh.sp{height:692px;display:flex;flex-direction:column;border-radius:16px 16px 0 0}
+.hd{width:38px;height:4px;background:#ccc;border-radius:3px;margin:-10px auto 15px}
+.qm{display:flex;justify-content:space-between;border:1px solid #e7e7e1;border-top:0;padding:11px;font-size:13px;min-height:44px;align-items:center}
+.qms{margin:-8px 0 12px}.qms .qm:first-child{border-top:1px solid #e7e7e1}
+.pk{display:flex;gap:12px;align-items:center;padding:12px 2px;border-bottom:1px solid #e7e7e1;min-height:56px}
+.mn{position:absolute;right:13px;top:40px;border:1px solid #999;background:#fff;border-radius:5px;padding:4px;min-width:145px;z-index:2}.mn div{padding:11px 9px;font-size:12px}
+.pb{height:4px;background:#e5e5e5;border-radius:4px;margin:7px 0 16px}.pb i{display:block;height:100%;background:#2b2b2b}
+</style></head><body>
+<div style="font-size:12px;color:#555;margin-bottom:6px">Wireframes estructurales · 390 × 844 px · escala de grises · fuente: prototipo_carga_rapida_autocompletar_v4.html</div>
+<div class="top" id="idx"></div><div id="app"></div>
+<script>
+const ids=[];
+const hdr=(c,t,d)=>`<header><div class=lp><i>A</i><i>M</i><i class=m>+1</i><b></b></div><div class=ey>${c}</div><h1>${t}</h1><p>${d}</p></header>`;
+const N=a=>`<nav>${['⌂|Inicio','☷|Compras','▤|Inventario','⌑|Dónde guardo'].map((x,i)=>{x=x.split('|');return `<div class="${i==a?'on':''}"><b>${x[0]}</b>${x[1]}</div>`}).join('')}</nav>`;
+const B=(t,k='')=>`<div class="btn ${k}">${t}</div>`,L=t=>`<span class=lk>${t}</span>`,T=(t,k='')=>`<span class="tag ${k}">${t}</span>`,mu=t=>`<span class=m>${t}</span>`;
+const C=(x,s='')=>`<div class=card ${s}>${x}</div>`;
+const CH=(a,o)=>`<div class=ch>${a.map((c,i)=>`<span class="${i==o?'on':''}">${c}</span>`).join('')}</div>`;
+const SEC=(l,r)=>`<div class=sec><h2>${l}</h2>${r}</div>`;
+const lb=t=>`<div class=lb>${t}</div>`,fd=(v,ph,o='')=>`<div class="fd ${o}">${v?v:`<span>${ph}</span>`}</div>`;
+const sel=(v,an)=>`<div class=fd>${v}<i>▾</i></div>${an?`<div class=an>Opciones: ${an}</div>`:''}`;
+const AC=(a,b)=>`<div class=ac>${B(a)}${B(b,'p')}</div>`;
+const SH=(t,b)=>`<div class=ov></div><div class=sh><h2>${t}</h2><p class=m style="margin:6px 0 14px">Prototipo con datos de demostración.</p>${b}</div>`;
+const CF=(t,m,a,b)=>SH(t,`<p class=m>${m}</p>`+AC(a,b));
+const F=(id,n,h,m,nv,o='',note='')=>{ids.push(id);return `<div class=w id="w${id}"><b>${id} — ${n}</b>${note?`<small>${note}</small>`:''}<div class=f>${h}<main>${m}</main>${N(nv)}${o}</div></div>`};
+const HH=hdr('MI HOGAR · RESUMEN','Hola, Andrés','Así están las cosas en casa.'),HS=hdr('MI HOGAR · ESPACIOS','Dónde guardo','Tus espacios para guardar alimentos.'),HI=hdr('MI HOGAR · INVENTARIO','Inventario','Encontrá qué hay en casa y dónde está.'),HC=hdr('COMPRAS · LISTA','Lista de compras','Organizá lo que necesitás comprar.'),HB=hdr('COMPRAS · LISTA','Modo compra','Marcá los productos mientras comprás.'),HR=hdr('COMPRAS · INGRESO','Revisar compra','Ajustá cantidades antes de ingresar los alimentos.');
+const P=[['Leche entera',2,'unidades','Heladera','Vence en 3 días',1],['Queso cremoso',1,'paquete','Heladera','Vence en 5 días',1],['Arroz',2,'paquetes','Alacena','Buen estado',0],['Tomate en lata',4,'latas','Alacena','Buen estado',0],['Arvejas congeladas',1,'paquete','Congelador','Buen estado',0],['Tomates',3,'unidades','Heladera','Consumir pronto',1],['Detergente',1,'botella','Mueble de limpieza','',0]];
+const S=[['▤','Alacena','Secos y enlatados',12],['▥','Heladera','Frescos y refrigerados',8],['▦','Congelador','Congelados',6],['▤','Mueble de limpieza','Limpieza',5]];
+const inv=(p,mn)=>C(`<div class=row><div class=gr><div class=nm>${p[0]}</div><div class=sub>${p[1]} ${p[2]} · ${p[3]}</div></div>${p[5]?T('Prioridad','w'):''}<span class=m style="font-size:21px;padding:2px 7px">⋯</span></div>${mn?'<div class=mn><div>Mover</div><div>Ver detalle</div></div>':''}<div class=ln></div><div class=row><span class=sub style="margin:0">${p[4]}</span><div class=gr></div><div class=qt><i>−</i>${p[1]}<i>+</i></div>${L('Agotado')}</div>`);
+const prow=(p,ex='')=>C(`<div class=row><div class=gr><div class=nm>${p[0]}</div><div class=sub>${p[1]} ${p[2]} · ${p[3]}</div></div>${p[5]?T('Consumir pronto','w'):''}${ex}</div><div class=sub>${p[4]}</div>`);
+const homeM=()=>C(`<div class=m>INVENTARIO DEL HOGAR</div><div style="font-size:28px;font-weight:650;margin-top:5px">14 <span style="font-size:13px;font-weight:400">unidades registradas</span></div><div class=sub>4 espacios configurados</div>`)+SEC('Accesos rápidos','')+`<div class=grid>${[['＋','Carga rápida','Registrar una compra'],['−','Se está acabando','Avisar a la familia'],['☷','Lista de compras','5 pendientes'],['⌑','Dónde guardo','Ver espacios']].map(q=>`<div class=q><b>${q[0]}</b><strong>${q[1]}</strong><span>${q[2]}</span></div>`).join('')}</div>`+SEC('Para revisar',L('Ver inventario →'))+prow(P[0])+prow(P[1]);
+const spM=()=>`<div class=row style="margin-bottom:15px"><div class=gr><div class=nm>Espacios de tu hogar</div><div class=sub>Consultá qué hay en cada lugar.</div></div>${B('+ Nuevo','p')}</div>`+S.map(s=>C(`<div class=row><div class=ic>${s[0]}</div><div class=gr><div class=nm>${s[1]}</div><div class=sub>${s[2]}</div></div><div style="text-align:right"><div class=nm>${s[3]}</div><div class=sub style="margin:0">alimentos</div></div><span>›</span></div>`)).join('')+B('+ Agregar espacio','w100')+`<div class=nt>Creá tus propios espacios y asigná alimentos al ingresarlos al inventario.</div>`;
+const dM=(ic,n,t,c,its)=>`<div class=lk style="padding:0;margin-bottom:15px;display:block">← Todos los espacios</div><div class=row style="margin-bottom:18px"><div class=ic>${ic}</div><div class=gr><h2>${n}</h2><div class=sub>${t} · ${c} alimentos</div></div>${B('Editar')}</div>`+SEC('Qué hay aquí',mu(its.length+' registrados'))+(its.map(p=>prow(p,B('Mover'))).join('')||'<div class=emp>Todavía no hay alimentos registrados en este espacio.</div>')+B('+ Agregar alimento aquí','w100')+`<div class=ac>${B('Editar espacio')}${B('Eliminar')}</div>`;
+const HEL=dM('▥','Heladera','Frescos y refrigerados',8,[P[0],P[1],P[5]]);
+const iM=(ps,o={})=>fd(o.q&&o.q+'|','Buscar un alimento...').replace('margin','margin')+CH(['Todos','Por vencer','Heladera','Alacena','Congelador'],o.on||0)+`<div class=sec style="margin:0 0 11px">${mu(ps.length+' productos')}${L('+ Cargar')}</div>`+(ps.map((p,i)=>inv(p,o.menu&&i==0)).join('')||'<div class=emp>No encontramos productos.</div>')+B('+ Registrar alimento','w100');
+const LI=[['Leche entera','Lácteos',2,'unidades'],['Pan','Panadería',1,'unidad'],['Tomates','Verdulería',4,'unidades']],CAT=['Todos','Almacén','Lácteos','Limpieza','Panadería','Verdulería'];
+const si=(x,c)=>C(`<div class=row><i class="cb ${c?'x':''}">${c?'✓':''}</i><div class=gr><div class=nm>${x[0]}</div><div class=sub>${x[1]} · ${x[2]} ${x[3]}</div></div>${c?T('Comprado','g')+L('Deshacer'):L('Quitar')}</div>`,c?'style="border:1.5px solid #2b2b2b"':'');
+const topB=()=>`<div class="btn w100" style="justify-content:space-between;padding:14px;margin-bottom:12px"><span>＋ Buscar y agregar productos</span><span class=m>Abrir ›</span></div>`;
+const shM=(o={})=>topB()+CH(CAT,o.on||0)+`<div class=sec><div class=row style="gap:8px"><h2>Productos de la lista</h2>${T('Lista preparada','g')}</div></div>`+(o.empty?'<div class=emp>No hay productos en esta categoría.</div>':LI.map(x=>si(x,0)).join(''))+B('Comenzar compra','p w100');
+const bM=(k=[])=>topB()+CH(CAT,0)+`<div class=sub style="margin:0">${k.length} de 3 marcados</div><div class=pb><i style="width:${k.length/3*100}%"></i></div>`+LI.map(x=>`<div class=sec style="margin:14px 0 9px"><h2>${x[1]}</h2>${mu('1 productos')}</div>`+si(x,k.includes(x[0]))).join('')+B('Terminar compra','p w100');
+const RV=q=>[['Pan','Panadería'],['Leche entera','Lácteos'],['Tomates','Verdulería']].map((x,i)=>C(`<div class=row><div class=gr><div class=nm>${x[0]}</div><div class=sub>${x[1]}</div></div><div class=qt><i>−</i>${q[i]}<i>+</i></div></div>`)).join('');
+const rM=b=>`<div class=lk style="padding:0;display:block;margin-bottom:15px">← Volver a la compra</div><h2>Lo que trajiste</h2><p class=m style="margin:7px 0 15px">Podés corregir las cantidades reales.</p>${b}`+B('Ingresar al inventario','p w100');
+const PR=[['Café','Almacén',1],['Yogur','Lácteos',1],['Arroz','Almacén'],['Leche entera','Lácteos'],['Queso cremoso','Lácteos'],['Detergente','Limpieza'],['Pan','Panadería'],['Tomates','Verdulería']];
+const pk=(x,s)=>`<div class=pk><i class="cb ${s?'x':''}">${s?'✓':''}</i><div class=gr><div class=nm>${x[0]}</div><div class=sub style="margin:0">${x[1]}${x[2]?' · Queda poco':''}</div></div></div>`;
+const pick=(q,res,n)=>`<div class=ov></div><div class="sh sp"><div class=hd></div><div class=row style="justify-content:space-between"><h2>Agregar productos</h2><span style="font-size:22px;padding:2px 8px">×</span></div><p class=sub style="margin:5px 0 10px">Seleccioná varios productos y agregalos juntos.</p><div class=fd style="margin:0 0 10px">${q?`<span style="color:#2b2b2b">${q}|</span><i>×</i>`:'<span>Buscar o crear producto...</span>'}</div><div style="flex:1;overflow:hidden">${res}</div><div style="border-top:1px solid #e7e7e1;padding-top:12px">${B(`Agregar seleccionados (${n})`,'p w100'+(n?'':' dis'))}</div></div>`;
+const lab='<div class=sub style="margin:8px 0">Queda poco y catálogo</div>';
+const prodMod=(nm,ex)=>SH('Registrar alimento',lb('Nombre del alimento')+nm+ex+lb('Cantidad')+fd('1')+lb('Fecha de vencimiento (opcional)')+`<div class=fd><span>dd/mm/aaaa</span><i>▾</i></div>`+lb('Dónde guardarlo')+sel('Alacena','Alacena · Heladera · Congelador · Sin ubicación')+AC('Cancelar','Guardar'));
+const spMod=(t,n,ty,an)=>SH(t,lb('Nombre del espacio')+fd(n,'Ej. Alacena secundaria')+lb('Tipo')+sel(ty,'Alacena · Heladera · Congelador · Despensa · Mueble · Otro')+(an?`<div class=an style="margin-top:-6px">${an}</div>`:'')+AC('Cancelar','Guardar'));
+const outMod=SH('¿Qué se está acabando?',lb('Nombre del producto')+fd('','Ej. Aceite')+sel('Queda poco','Queda poco · Agotado')+AC('Cancelar','Sumar a compras'));
+const G=[
+['1 · Inicio',[
+F('1.1','Inicio',HH,homeM(),0),
+F('1.2','Inicio + modal Registrar alimento (Carga rápida)',HH,homeM(),0,prodMod(fd('','Ej. Harina'),'')),
+F('1.3','Inicio + modal ¿Qué se está acabando?',HH,homeM(),0,outMod)]],
+['2 · Dónde guardo',[
+F('2.1','Listado de espacios',HS,spM(),3),
+F('2.2','Detalle de espacio (Heladera)',HS,HEL,3),
+F('2.2b','Detalle de espacio vacío (espacio nuevo)',HS,dM('▤','Alacena secundaria','Alacena',0,[]),3),
+F('2.3','Modal Nuevo espacio',HS,spM(),3,spMod('Nuevo espacio','','Alacena')),
+F('2.4','Modal Editar espacio',HS,HEL,3,spMod('Editar espacio','Heladera','Alacena','El HTML no preselecciona el tipo: se muestra la primera opción.')),
+F('2.5','Modal Eliminar espacio',HS,HEL,3,CF('Eliminar espacio','¿Eliminar «Heladera»? Los alimentos quedarán sin ubicación.','Cancelar','Eliminar'))]],
+['3 · Inventario',[
+F('3.1','Listado de inventario',HI,iM(P),2,'','Las 7 tarjetas se ven con scroll interno.'),
+F('3.2','Estado de búsqueda («to»)',HI,iM([P[3],P[5]],{q:'to'}),2),
+F('3.3','Estado de filtro (Heladera)',HI,iM([P[0],P[1],P[5]],{on:2}),2),
+F('3.4','Menú contextual de producto',HI,iM(P,{menu:1}),2),
+F('3.5','Estado vacío',HI,iM([],{q:'Harina'}),2),
+F('3.6','Modal Registrar alimento',HI,iM(P),2,prodMod(fd('','Ej. Harina'),'')),
+F('3.7','Autocompletado con coincidencias',HI,iM(P),2,prodMod(fd('to|'),`<div class=qms><div class=qm>Tomate en lata ${mu('Seleccionar')}</div><div class=qm>Tomates ${mu('Seleccionar')}</div></div>`)),
+F('3.7b','Autocompletado sin coincidencias',HI,iM(P),2,prodMod(fd('Harina|'),'<div class=sub style="margin:-6px 0 10px">Producto nuevo: se registrará al guardar.</div>')),
+F('3.8','Validación de error',HI,iM(P),2,prodMod(fd('','Ej. Harina','er'),'<div class=em>Campo obligatorio</div>')),
+F('3.9','Modal Cambiar ubicación',HI,iM(P),2,SH('Cambiar ubicación',`<p class=m style="margin-bottom:8px">Leche entera</p>`+sel('Heladera','Alacena · Heladera · Congelador · Mueble de limpieza · Sin ubicación')+AC('Cancelar','Mover'))),
+F('3.10','Modal Marcar como agotado',HI,iM(P),2,CF('Marcar como agotado','¿Querés marcar «Leche entera» como agotado?','Cancelar','Agotado'))]],
+['4 · Compras',[
+F('4.1','Lista de compras',HC,shM(),1,'','Incluye los estados 4.2 (pendiente). Los marcados solo se ven en Modo compra (5.2).'),
+F('4.1b','Categoría sin productos (filtro Almacén)',HC,shM({on:1,empty:1}),1),
+F('4.4','Hoja Agregar productos (sin selección)',HC,shM(),1,pick('',lab+PR.map(x=>pk(x,0)).join(''),0)),
+F('4.5','Selección múltiple',HC,shM(),1,pick('',lab+PR.map(x=>pk(x,x[0]=='Café'||x[0]=='Yogur')).join(''),2)),
+F('4.6','Búsqueda y creación de producto',HC,shM(),1,pick('Lech',pk(['Leche entera','Lácteos'],0)+`<div class="btn w100" style="justify-content:flex-start;margin-top:12px">＋ Crear «Lech»</div>`,0)),
+F('4.6b','Crear producto (dentro de la hoja)',HC,shM(),1,pick('Lech',`<div style="padding:12px 0"><div class=nm>Crear producto</div>${lb('Nombre')}${fd('Lech')}${lb('Categoría')}${sel('Panadería')}<div class=ac>${B('Cancelar')}${B('Crear y seleccionar','p')}</div></div>`,0)),
+F('4.7','Modal Agregar a la lista',HC,shM(),1,SH('Agregar a la lista',lb('Producto')+fd('','Ej. Huevos')+lb('Categoría')+sel('Panadería')+lb('Cantidad')+fd('1')+AC('Cancelar','Agregar')),'No alcanzable: ningún botón del prototipo lo abre.'),
+F('4.8','Modal Quitar de la lista',HC,shM(),1,CF('Quitar de la lista','¿Querés quitar «Pan» de la lista de compras?','Cancelar','Quitar'))]],
+['5 · Modo compra',[
+F('5.1','Pantalla Modo compra',HB,bM([]),1,'','En el HTML también se puede deslizar una tarjeta: derecha «✓ Comprar», izquierda «Quitar».'),
+F('5.2','Progreso parcial',HB,bM(['Pan']),1),
+F('5.3','Compra completa',HB,bM(['Leche entera','Pan','Tomates']),1),
+F('5.4','Modal Última llamada',HC,shM(),1,SH('Última llamada','<p class=m>El aviso a la familia se simulará en este prototipo.</p><div class=nt>“Andrés está en el supermercado. Tienen 10 minutos para agregar faltantes”.</div>'+AC('Cancelar','Iniciar compra')),'En el HTML se abre desde Lista de compras (Comenzar compra).'),
+F('5.5','Modal Quedan productos sin marcar',HB,bM(['Pan']),1,CF('Quedan productos sin marcar','Hay 2 productos pendientes. ¿Terminar la compra igual?','Seguir comprando','Terminar igual'),'Terminar compra pasa directo a Revisar compra (sin pantalla intermedia).')]],
+['6 · Revisar compra',[
+F('6.1','Pantalla Revisar compra',HR,rM(RV([1,2,4])),1),
+F('6.2','Sin productos marcados',HR,rM('<div class=emp>No marcaste productos comprados.</div>'),1),
+F('6.3','Cantidades modificadas',HR,rM(RV([1,3,2])),1),
+F('6.4','Modal Compra registrada',HR,rM(RV([1,2,4])),1,SH('Compra registrada','<p class=m>Tu compra se ingresó correctamente al inventario.</p><div class=nt>3 productos ingresados. Asigná las ubicaciones para terminar.</div><div class=ac>'+B('Confirmar','p')+'</div>'))]]
+];
+document.getElementById('app').innerHTML=G.map(g=>`<h3>${g[0]}</h3><div class=g>${g[1].join('')}</div>`).join('');
+document.getElementById('idx').innerHTML=ids.map(i=>`<a href="#w${i}">${i}</a>`).join('');
+</script></body></html>
