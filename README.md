@@ -10,7 +10,7 @@ Caso de estudio del proyecto académico **Casita**, una propuesta para coordinar
 
 ## Sitio y prototipo
 
-- Portafolio publicado: pendiente de publicar en GitHub Pages.
+- Portafolio publicado: https://gabrieldiaz-stack.github.io/GabrielDiaz-stack/
 - Prototipo navegable de wireframes: [`anexos/wireframes_donde_guardo.html`](anexos/wireframes_donde_guardo.html). Contiene estados de seis áreas y 28 pantallas; todavía no es una demo funcional con datos persistentes.
 
 ## Organización
